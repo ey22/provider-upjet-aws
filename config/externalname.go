@@ -133,6 +133,15 @@ var TerraformPluginFrameworkExternalNameConfigs = map[string]config.ExternalName
 	// aws_rds_instance_state import format: rdsInstanceId-12345678
 	"aws_rds_instance_state": rdsInstanceState(),
 
+	// route53profiles
+	//
+	// Route53 profiles association can be imported using the id
+	"aws_route53profiles_association": identifierFromProviderWithDefaultStub("rpa-id-12345678"),
+	// Route53 profiles profile can be imported using the id
+	"aws_route53profiles_profile": identifierFromProviderWithDefaultStub("rp-12345678"),
+	// Route53 profiles resource assocition can be imported using the id
+	"aws_route53profiles_resource_association": identifierFromProviderWithDefaultStub("rpa-id-12345678"),
+
 	// s3
 	//
 	// S3 directory bucket can be imported using the full id: [bucket_name]--[azid]--x-s3
